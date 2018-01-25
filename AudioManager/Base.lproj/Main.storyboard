@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J12-OT-34M">
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
+                                <state key="normal" title="backgroundMusic"/>
+                                <connections>
+                                    <action selector="backgroundMusicBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O9L-mi-1KQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAP-LK-T8m">
+                                <rect key="frame" x="16" y="168" width="343" height="30"/>
+                                <state key="normal" title="Coin"/>
+                                <connections>
+                                    <action selector="cointBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Czt-m7-jVQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1T-DK-3Mf">
+                                <rect key="frame" x="16" y="376" width="343" height="30"/>
+                                <state key="normal" title="Laughing"/>
+                                <connections>
+                                    <action selector="laughingBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zEl-DJ-1rZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgx-f8-MKd">
+                                <rect key="frame" x="16" y="271" width="343" height="30"/>
+                                <state key="normal" title="LevelUp"/>
+                                <connections>
+                                    <action selector="levelBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lc-am-obc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjh-7B-ngO">
+                                <rect key="frame" x="16" y="482" width="343" height="30"/>
+                                <state key="normal" title="gameOver"/>
+                                <connections>
+                                    <action selector="gameOverBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ySe-x1-1Zq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f1T-DK-3Mf" firstAttribute="trailing" secondItem="Sjh-7B-ngO" secondAttribute="trailing" id="4fh-pG-W6X"/>
+                            <constraint firstItem="Sjh-7B-ngO" firstAttribute="top" secondItem="f1T-DK-3Mf" secondAttribute="bottom" constant="76" id="5s7-GW-nv0"/>
+                            <constraint firstItem="FAP-LK-T8m" firstAttribute="top" secondItem="J12-OT-34M" secondAttribute="bottom" constant="66" id="7jo-DZ-Ax4"/>
+                            <constraint firstItem="FAP-LK-T8m" firstAttribute="trailing" secondItem="Kgx-f8-MKd" secondAttribute="trailing" id="8Dn-k8-Ym3"/>
+                            <constraint firstItem="Kgx-f8-MKd" firstAttribute="trailing" secondItem="f1T-DK-3Mf" secondAttribute="trailing" id="97v-E4-RWL"/>
+                            <constraint firstItem="J12-OT-34M" firstAttribute="trailing" secondItem="FAP-LK-T8m" secondAttribute="trailing" id="CbG-Iu-aZZ"/>
+                            <constraint firstItem="J12-OT-34M" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HvV-IM-Bft"/>
+                            <constraint firstItem="J12-OT-34M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="KcM-D5-hQI"/>
+                            <constraint firstItem="J12-OT-34M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YcI-yt-saC"/>
+                            <constraint firstItem="FAP-LK-T8m" firstAttribute="leading" secondItem="Kgx-f8-MKd" secondAttribute="leading" id="Zsj-fo-Doj"/>
+                            <constraint firstItem="J12-OT-34M" firstAttribute="leading" secondItem="FAP-LK-T8m" secondAttribute="leading" id="elO-pw-GY1"/>
+                            <constraint firstItem="Kgx-f8-MKd" firstAttribute="leading" secondItem="f1T-DK-3Mf" secondAttribute="leading" id="kYC-b8-Uvn"/>
+                            <constraint firstItem="f1T-DK-3Mf" firstAttribute="top" secondItem="Kgx-f8-MKd" secondAttribute="bottom" constant="75" id="mpp-Bc-vXd"/>
+                            <constraint firstItem="Kgx-f8-MKd" firstAttribute="top" secondItem="FAP-LK-T8m" secondAttribute="bottom" constant="73" id="p4F-cu-TIx"/>
+                            <constraint firstItem="f1T-DK-3Mf" firstAttribute="leading" secondItem="Sjh-7B-ngO" secondAttribute="leading" id="vto-J9-z7A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundMusicBtn" destination="J12-OT-34M" id="2Rc-fB-fqC"/>
+                        <outlet property="coinBtn" destination="FAP-LK-T8m" id="4Xj-qZ-VlV"/>
+                        <outlet property="gameOverBtn" destination="Sjh-7B-ngO" id="Khp-xx-1NW"/>
+                        <outlet property="laughingBtn" destination="f1T-DK-3Mf" id="eiZ-ST-RNy"/>
+                        <outlet property="levelUpBtn" destination="Kgx-f8-MKd" id="vft-Iv-l2o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

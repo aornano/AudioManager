@@ -67,13 +67,13 @@ Creating a New Label Node:
 
 Add the source file ```AudioManager.swift``` to your project and use it.
 
-Call the shared instance with this line:
-
-```let audioManager = AudioManager.sharedInstance```
-
 ## Usage
 
+Call the shared instance with this line:
+
 ```
+let audioManager = AudioManager.sharedInstance
+
 audioManager.playBackgroundMusic(filename: "backgroundMusic.mp3", musicVolume: 1.0)
 audioManager.playSoundEffect(filename: "coin.wav", effectVolume: 1.0)
 ```

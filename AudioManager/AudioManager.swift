@@ -154,7 +154,7 @@ class AudioManager: NSObject {
     func playSoundEffect(filename: String, effectVolume:Float, looped:Bool = false){
         guard let url = Bundle.main.url(forResource: filename, withExtension: nil) else { return }
         if soundEffects.count >= maxSoundEffects { // too many players reset the list
-            soundEffects.removeAll()
+            soundEffects.remove(at: 0)
         }
         if soundEffects.count == 0 {
             addNewSoundEffect(filename,url,effectVolume,looped)

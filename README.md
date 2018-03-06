@@ -8,10 +8,6 @@
 )](https://developer.apple.com/iphone/index.action)
 [![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
 
-Sequentially bouncing zoom animation:
-
-![demo](demo.jpg) 
-
 **AudioManager** is a library written in Swift to correctly handle your audio inside your project. It's based to the ```AVAudioFoundation``` framework so you can use it with your iOS project (using ```UIKit```, ```SpriteKit```, etc..).
 With a shared instance class called ```AudioManager``` you can handle a background music player (``AVAudioPlayer`` property  and 30 effects (always based to ``AVAudioPlayer`` class) or more , if you need to increase it you can but it's recommended to use the actual value..
 
